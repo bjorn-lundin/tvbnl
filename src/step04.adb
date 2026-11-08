@@ -63,6 +63,7 @@ procedure Step04 is
    type Edit_Window is new Windows.Window with record
       Editor : File_Editors.File_Editor_Access;
    end record;
+   
    type Edit_Window_Access is access all Edit_Window;
 
    overriding function Title (Self : Edit_Window) return String;
